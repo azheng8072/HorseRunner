@@ -1,6 +1,6 @@
 package horseRunner;
 
-public hclass orseRunner {
+public class HorseRunner {
 
     public static void main(String[] args) {
         // write your code here
@@ -23,27 +23,9 @@ public hclass orseRunner {
         System.out.println(barn);
         System.out.println("Dusty trail is now in space: " + barn.findHorseSpace("Dusty Trail"));
     }
-    public int findHorseSpace(String name) {
-        for (int i = 0; i < this.spaces.length; i++) {
-            if (this.spaces[i]!=null && name.equals(this.spaces[i].getName())) {
-                return i;
-            }
-        }
-        return -1;
-    }
-    public void consolidate() {
-        for (int i = 0; i < this.spaces.length-1; i++) {
-            if (this.spaces[i] == null) {
-                for (int j = i+1; j < this.spaces.length; j++) {
-                    if (this.spaces[j] != null) {
-                        this.spaces[i] = this.spaces[j];
-                        this.spaces[j] = null;
-                        j = this.spaces.length;
-                    }
-                }
-            }
-        }
-    }
+}
+
+
 //    public void consolidate() {
 //        Horse[] newSpaces = new Horse[this.spaces.length];
 //        int nextSpot = 0;
@@ -67,4 +49,3 @@ public hclass orseRunner {
 //            this.spaces[i] = horseList.get(i);
 //        }
 //    }
-}
