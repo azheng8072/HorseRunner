@@ -8,12 +8,12 @@ public class HorseRunner {
         Horse horse2 = new Mustang("Dusty Trail", 22000);
         Horse horse3 = new Mustang("Silver", 12000);
 
-        Horse[] horse = new Horse[6];
+        Horse[] horses = new Horse[6];
 
-        horse[1] = horse1;
-        horse[2] = horse2;
-        horse[3] = horse3;
-        HorseBarn barn = new HorseBarn(horses);
+        horses[1] = horse1;
+        horses[2] = horse2;
+        horses[3] = horse3;
+        HorseBarn barn = new HorseBarn (horses);
 
         System.out.println(barn);
         System.out.println("Dusty trail is in space: " + barn.findHorseSpace("Dusty Trail"));
