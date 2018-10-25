@@ -12,6 +12,8 @@ public class HorseBarn {
         return -1;
     }
 
+    public HorseBarn (Horse[] spaces) {this.spaces = spaces;}
+
     public void consolidate() {
         for (int i = 0; i < this.spaces.length - 1; i++) {
             if (this.spaces[i] == null) {
